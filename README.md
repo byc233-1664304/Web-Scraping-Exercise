@@ -38,11 +38,11 @@ sudo ts-node src/server.ts
 3. If you want to customize the search city, you have two options:
    - Modify the **default value** of the `city` variable on **line 14** in `server.ts` to your desired city in the format:
      ```js
-     {cityFullName, StateInTwoUppercaseLetters}
+     "cityFullName, StateInTwoUppercaseLetters"
      ```
      Example:
      ```js
-     {San Jose, CA}
+     "San Jose, CA"
      ```
    - Alternatively, you can specify the city directly in the request query by appending it to the request URL:
      ```
