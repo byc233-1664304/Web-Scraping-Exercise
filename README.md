@@ -12,7 +12,7 @@
 
 1. Clone the repository from GitHub:
    ```sh
-   git clone <your-repository-url>
+   git clone https://github.com/byc233-1664304/Web-Scraping-Exercise.git
    ```
 2. Navigate to the project directory:
    ```sh
