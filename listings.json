@@ -1,344 +1,767 @@
 {
   "listings": [
     {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
       "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
     },
     {
       "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
     },
     {
       "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
     },
     {
       "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
     },
     {
       "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
     },
     {
       "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
     },
     {
-      "url": "https://www.zillow.com/homedetails/795-Princeton-Pl-Rockville-MD-20850/37107242_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
     },
     {
-      "url": "https://www.zillow.com/homedetails/795-Princeton-Pl-Rockville-MD-20850/37107242_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
     },
     {
-      "url": "https://www.zillow.com/homedetails/795-Princeton-Pl-Rockville-MD-20850/37107242_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
     },
     {
-      "url": "https://www.zillow.com/homedetails/795-Princeton-Pl-Rockville-MD-20850/37107242_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
     },
     {
       "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
     },
     {
       "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
     },
     {
       "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
     },
     {
       "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
     },
     {
       "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
     },
     {
       "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5801-Cartina-Ter-Rockville-MD-20852/37112941_zpid/",
+      "price": "$1,495,000",
+      "beds": "5",
+      "baths": "4",
+      "sqft": "4,287"
+    },
+    {
+      "url": "https://www.zillow.com/homedetails/5804-Inman-Park-Cir-APT-370-Rockville-MD-20852/2100260427_zpid/",
+      "price": "$475,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1,285"
     },
     {
       "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "price": "$799,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,624"
     },
     {
-      "url": "https://www.zillow.com/homedetails/14224-Hi-Wood-Dr-Rockville-MD-20850/37091708_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/4604-Brad-Ct-Rockville-MD-20853/37314939_zpid/",
+      "price": "$620,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1,972"
     },
     {
-      "url": "https://www.zillow.com/homedetails/922-Crawford-Dr-Rockville-MD-20851/37102980_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/10113-Hurst-St-Bethesda-MD-20814/37189552_zpid/",
+      "price": "$1,049,900",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2,100"
     },
     {
-      "url": "https://www.zillow.com/homedetails/922-Crawford-Dr-Rockville-MD-20851/37102980_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/15512-Thistlebridge-Ct-Rockville-MD-20853/118614001_zpid/",
+      "price": "$725,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "2,240"
     },
     {
-      "url": "https://www.zillow.com/homedetails/922-Crawford-Dr-Rockville-MD-20851/37102980_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/13401-Glen-Mill-Rd-Rockville-MD-20850/37093668_zpid/",
+      "price": "$1,190,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "4,140"
     },
     {
-      "url": "https://www.zillow.com/homedetails/922-Crawford-Dr-Rockville-MD-20851/37102980_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/5802-Valerian-Ln-Rockville-MD-20852/37118518_zpid/",
+      "price": "$829,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "2,032"
     },
     {
-      "url": "https://www.zillow.com/homedetails/14416-Myer-Ter-Rockville-MD-20853/37319940_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/4000-Wintersweet-Ct-Rockville-MD-20853/58243107_zpid/",
+      "price": "$1,275,000",
+      "beds": "6",
+      "baths": "6",
+      "sqft": "6,319"
     },
     {
-      "url": "https://www.zillow.com/homedetails/14416-Myer-Ter-Rockville-MD-20853/37319940_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/14416-Myer-Ter-Rockville-MD-20853/37319940_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/14416-Myer-Ter-Rockville-MD-20853/37319940_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/10042-Sterling-Ter-Rockville-MD-20850/37248331_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/10042-Sterling-Ter-Rockville-MD-20850/37248331_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/10042-Sterling-Ter-Rockville-MD-20850/37248331_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/10042-Sterling-Ter-Rockville-MD-20850/37248331_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/740-College-Pkwy-7-Rockville-MD-20850/37110426_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/740-College-Pkwy-7-Rockville-MD-20850/37110426_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/740-College-Pkwy-7-Rockville-MD-20850/37110426_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
-    },
-    {
-      "url": "https://www.zillow.com/homedetails/740-College-Pkwy-7-Rockville-MD-20850/37110426_zpid/",
-      "details": {
-        "price": "N/A",
-        "beds": "N/A",
-        "baths": "N/A",
-        "sqft": "N/A"
-      },
-      "childPages": []
+      "url": "https://www.zillow.com/homedetails/1-Old-Gate-Ct-Rockville-MD-20852/37095248_zpid/",
+      "price": "$1,100,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "2,642"
     }
   ]
 }

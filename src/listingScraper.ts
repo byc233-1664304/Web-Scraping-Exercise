@@ -116,7 +116,7 @@ async function detectBotProtection(page: Page): Promise<boolean> {
     console.log("Checking for Zillow's bot detection...");
 
     const isCaptchaPage = await page.evaluate(() => {
-        return document.body.innerText.includes("Press & Hold") || 
+        return !!document.body.innerText.includes("Press & Hold") || 
                !!document.querySelector("iframe") ||
                !!document.querySelector('script[src*="perimeterx"]') ||
                !!document.querySelector('script[src*="captcha"]');
@@ -174,6 +174,37 @@ async function handlePopup(page: Page) {
     }catch(err) {
         console.log("Popup did not appear, skipping selection.");
     }
+}
+
+export async function autoScroll(page: Page) {
+    console.log("Start controlled scrolling...");
+
+    await page.evaluate(async () => {
+        await new Promise<void>((resolve) => {
+            let totalHeight = 0;
+            let distance = window.innerHeight / 5; // Scroll in smaller increments
+            let scrollAttempts = 0;
+            let maxAttempts = 10; // Prevent infinite scrolling
+
+            const interval = setInterval(() => {
+                window.scrollBy(0, distance);
+                totalHeight += distance;
+
+                let newHeight = document.body.scrollHeight;
+
+                // Stop scrolling if no new content loads after several attempts
+                if(totalHeight >= newHeight || scrollAttempts >= maxAttempts) {
+                    clearInterval(interval);
+                    resolve();
+                }else {
+                    scrollAttempts++;
+                }
+            }, 1500); // small delays to simulate human scrolling
+        });
+    });
+
+    // Extra wait to ensure everything loads
+    await new Promise(resolve => setTimeout(resolve, 2000));
 }
 
 export async function searchCityOnListingSite(listingSite: string, city: string) {
@@ -246,21 +277,15 @@ export async function searchCityOnListingSite(listingSite: string, city: string)
     }
 }
 
-export async function getPropertyLinks(searchResUrl: string): Promise<string[]> {
+export async function scrapeListingFromSearchRes(searchResUrl: string): Promise<any[]> {
     const { browser, page } = await startANewPage();
-
     await slowNav(page, searchResUrl);
+    await new Promise(resolve => setTimeout(resolve, 2000));
 
-    console.log("Waiting for 'Press & Hold' challenge page...");
-
-    await page.waitForFunction(() => {
-        return document.body.innerText.includes("Press & Hold") || 
-           !!document.querySelector("p[style*='textColorIReverse']") ||
-           document.querySelectorAll("iframe").length > 0;
-    }, { timeout: 15000}).catch(() => console.log("'Press & Hold' page did not appear within 15s."));;
-
+    // if there is a press & hold challenge, do it
     if(await detectBotProtection(page)) {
         await solvePressNHoldWithTab(page);
+        await page.waitForNavigation({ waitUntil: "networkidle2", timeout: 20000 }).catch(() => console.log("No forced navigation detected."));
     }
 
     const citySearchResUrl = page.url();
@@ -289,126 +314,77 @@ export async function getPropertyLinks(searchResUrl: string): Promise<string[]> 
         }
     }
 
-    // Mimic human behavior to bypass bot detection
-    await page.mouse.move(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500));
-    await page.evaluate(() => window.scrollBy(0, window.innerHeight));
-    await new Promise(resolve => setTimeout(resolve, Math.floor(Math.random() * 3000) + 2000));
+    // mimic human movement
+    console.log("Moving mouse...");
+    await moveMouseRandomly(page);
 
-    let allPropertyLinks: string[] = [];
+    console.log("Extracting property details from search results page...");
+
+    let allListings: any[] = [];
     let hasNextPage = true;
-    let pageNum = 1; // Track current page number
+    let pageNum = 1;
 
     while(hasNextPage) {
         console.log(`Scraping page ${pageNum}...`);
 
-        // Extract all <a> links on the page
-        const links = await page.$$eval("a", anchors =>
-            anchors.map(a => a.href).filter(href => href.includes("://") && href.includes("zillow.com/homedetails/"))
-        );
+        // Wait until listings are visible
+        await page.waitForSelector('[data-test="property-card"]', { visible: true, timeout: 20000 })
+            .catch(() => console.warn("Property cards did not load in time."));
 
-        console.log(`Found ${links.length} links. Detecting property listings...`);
-        //console.log("Sample Links: ", links.slice(0, 10));
+        console.log("Extracting current listing before scrolling...");
+        
+        // Extract property details from the search result page
+        const currentListings = await page.$$eval('[data-test="property-card"]', propertyCards => {
+            return propertyCards.map(card => {
+                const priceEl = card.querySelector('[data-test="property-card-price"]');
+                const price = priceEl?.textContent?.trim() || "N/A";
 
-        // Filter links that match the detected property pattern
-        const propertyLinks = links.filter(url => {
-            try {
-                const parsedUrl = new URL(url);
-                return parsedUrl.hostname.includes("zillow.com") && 
-                       parsedUrl.pathname.startsWith("/homedetails/") && 
-                       /\/\d+_zpid/.test(parsedUrl.pathname);
-            } catch (err) {
-                console.warn(`Skipping invalid URL: ${url}`);
-                return false;
-            }
+                // Target the correct <ul> even if the class name changes
+                const detailsList = card.querySelector('*[class*="StyledPropertyCardHomeDetailsList"]');
+                const detailsEls = detailsList ? detailsList.querySelectorAll('li'): [];
+
+                // Extract property URL by finding the first <a> tag inside the card
+                const propertyLink = Array.from(card.querySelectorAll("a"))
+                    .map(a => a.href)
+                    .find(href => href.includes("://") && href.includes("zillow.com/homedetails/"));
+
+                return {
+                    url: propertyLink || "N/A",
+                    price: price,
+                    beds: detailsEls.length > 0 ? detailsEls[0].querySelector('b')?.textContent || "N/A" : "N/A",
+                    baths: detailsEls.length > 1 ? detailsEls[1].querySelector('b')?.textContent || "N/A" : "N/A",
+                    sqft: detailsEls.length > 2 ? detailsEls[2].querySelector('b')?.textContent || "N/A" : "N/A"
+                }
+            });
         });
-        console.log(`Extracted ${propertyLinks.length} property links.`);
 
-        allPropertyLinks.push(...propertyLinks);
+        console.log(`Extracted ${currentListings.length} listings from page ${pageNum}.`);
 
-        // Check for the "Next" button to load more listings
-        const nextButton = await page.$('a[aria-label="Next"], button[aria-label="Next"]');
+        allListings.push(...currentListings);
+
+        const nextButton = await page.$('ul[class*="PaginationList"] > li:last-child a');
         if(nextButton) {
-            const isDisabled = await page.evaluate(button => button.hasAttribute("disabled") || button.getAttribute("aria-disabled") === "true", nextButton);
-            
+            const isDisabled = await page.evaluate(button =>
+                button.hasAttribute("disabled") || button.getAttribute("aria-disabled") === "true",
+                nextButton
+            );
+
             if(!isDisabled) {
-                console.log("Clicking Next Page...");
+                console.log("Clicking next button to load more listings...");
                 await nextButton.click();
-                await new Promise(resolve => setTimeout(resolve, 3000)); // Wait for the next page to load
-                pageNum++
-            }else{
-                console.log("'Next' button is disabled. No more pages.");
+                await new Promise(resolve => setTimeout(resolve, 5000)); // Wait for new page to load
+                await autoScroll(page); // Scroll again after new page loads
+                pageNum++;
+            }else {
+                console.log("Next button is disabled. No more pages.");
                 hasNextPage = false;
             }
         }else {
-            console.log("No 'Next' button found. Stopping pagination.");
+            console.log("No next button found. Stopping pagination.");
             hasNextPage = false;
         }
     }
 
     await browser.close();
-    return allPropertyLinks;
-}
-
-export async function extractPropertyDetails(page: Page) {
-    // try {
-    //     console.log("Extracting property details...");
-
-    //     // Log the full page HTML to debug missing elements
-    //     const fullHTML = await page.evaluate(() => document.body.innerHTML);
-    //     console.log("Full Page HTML:", fullHTML);
-
-    //     return { price: "N/A", beds: "N/A", baths: "N/A", sqft: "N/A" }; // Return dummy values for now
-    // } catch (err) {
-    //     console.error("Error extracting property details:", err);
-    //     return { price: "N/A", beds: "N/A", baths: "N/A", sqft: "N/A" };
-    // }
-
-    try{
-        // Wait for the price element using a flexible selector
-        await page.waitForSelector("[data-testid='price'] span, span[class*='price-text'], span[class*='Price']", { timeout: 10000 })
-            .catch(() => console.warn("Price selector not found"));
-
-        // Extract price
-        const price = await page.$eval("[data-testid='price'] span, span[class*='price-text'], span[class*='Price']", el => el.textContent?.trim())
-            .catch(() => "N/A");
-
-        // Wait for bed/bath/sqft elements to load
-        await page.waitForSelector('[data-testid="bed-bath-sqft-fact-container"], [data-testid="bed-bath-sqft-text__container"]', { timeout: 10000 }).catch(() => console.warn("Bed/Bath/Sqft container not found"));
-
-        // Extract beds, baths, and sqft values
-        const bedBathSqftElements = await page.$$('[data-testid="bed-bath-sqft-fact-container"], [data-testid="bed-bath-sqft-text__container"]');
-
-        let beds = "N/A", baths = "N/A", sqft = "N/A";
-
-        for (const element of bedBathSqftElements) {
-            try {
-                // Tries multiple value selectors
-                const value = await element.evaluate(el => {
-                    const valEl = el.querySelector('span[class*="ValueText"], span[data-testid="bed-bath-sqft-text__value"]');
-                    return valEl ? (valEl!.textContent ? valEl!.textContent.trim() : "N/A") : "N/A";
-                });
-    
-                // Tries multiple description selectors
-                const description = await element.evaluate(el => {
-                    const descEl = el.querySelector('span[class*="DescriptionText"], span[data-testid="bed-bath-sqft-text__description"]');
-                    return descEl ? (descEl!.textContent ? descEl!.textContent.trim().toLowerCase() : "") : "";
-                });
-    
-                if (description.includes("bed")) {
-                    beds = value;
-                } else if (description.includes("bath")) {
-                    baths = value;
-                } else if (description.includes("sqft")) {
-                    sqft = value;
-                }
-            }catch(err) {
-                console.warn("Error extracting bed/bath/sqft details: ", err);
-            }
-
-            return { price, beds, baths, sqft };
-        }
-    }catch(err) {
-        console.error("Error extracting property details: ", err);
-        return { price: "N/A", beds: "N/A", baths: "N/A", sqft: "N/A" };
-    }
+    return allListings;
 }
